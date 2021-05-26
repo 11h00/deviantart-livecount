@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"/>
+<head>
+<title>mathias</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/checkuser.js"></script>
+<script src="js/gap.js"></script>
+<link rel="icon" href="img/conar.ico">
+<link rel="font" href="fon/Futura.ttf">
+<link rel="stylesheet" type="text/css" href="css/livecount.css" />
+<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/odometer.js"></script>
+<script src="js/sweetalert.js"></script>
+<div style='text-align: center;'>
+<button onclick="back()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 30%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" title="degar" type="button">back</button>
+<button onclick="gotomedia()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 30%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" type="button">media livecount</button>
+<button onclick="gotohashtag()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 30%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" type="button">hashtags post</button>
+</div>
+<div style="text-align: center;font-family:mathias;font-weight:600;    background: rgba(255, 255, 255, 0.52);width: 90%;margin:auto;height: 200px;">
+<p style="font-size: 40px;padding: 10px;">getting blocked? try other methods:</p>
+<div style="margin: auto;
+    display: flex;">
+<button class="alermotod" title="use the normal url for get a profile stat" id="buttonmethod1" style="transform: translate(0px, 0px);
+    border: 0px;
+	width: 45%;
+    font-size: 50px;
+	margin: auto;
+    font-family: mathias;
+    background: rgba(255, 0, 0, 0.42);
+    font-weight: 600;">method 1</button>
+	<button class="alermotod" title="add /channel/ for get the user stat" id="buttonmethod2"  style="transform: translate(0px, 0px);
+    border: 0px;
+    font-size: 50px;
+	margin: auto;
+	width: 45%;
+    font-family: mathias;
+    background: rgba(0, 255, 7, 0.42);
+    font-weight: 600;">method 2</button>
+</div>
+</div>
+<h1 id="non" style="
+    color: white;
+	text-align: center;
+">instagram gap livecount by mathias777</h1><br>
+	<script>
+	function user1(){
+	event.preventDefault()
+	useuname1 = document.getElementById("usernamer1").value
+	switch(methoddemerde){
+	    case 0:
+		CULER.open('GET', "https://www.instagram.com/" + useuname1 + "/channel/?__a=1");
+		break
+		case 1:
+		CULER.open('GET', "https://www.instagram.com/" + useuname1 + "/?__a=1");
+		break
+		}
+		CULER.send(null)
+	}
+	function user2(){
+	event.preventDefault()
+	useuname2 = document.getElementById("usernamer2").value
+	switch(methoddemerde){
+	    case 0:
+		VS.open('GET', "https://www.instagram.com/" + useuname2 + "/channel/?__a=1");
+		break
+		case 1:
+		VS.open('GET', "https://www.instagram.com/" + useuname2 + "/?__a=1");
+		break
+		}
+		VS.send(null)
+	}
+	</script>
+	      
+ <div id="chercher" style= "margin-left : 10%">
+ <form  style="display: contents;"onsubmit="user1()">
+  <input type="text" id="usernamer1" name="leuseu"required placeholder="user 1"style="width: 20%" /><button style="  
+  text-transform: uppercase;
+  outline: 0;
+  background: #5610ff;
+  width: 15%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+   box-shadow: 7px 9px 13px 0px rgba(0,0,0,0.91);
+  cursor: pointer;" type="button" onclick="user1()">shearch</button>
+  </form>
+   <form style="display: contents;" onsubmit="user2()">
+  <input type="text" id="usernamer2" name="leuseu"required placeholder="user 2"style="width: 20%;margin-left: 22.3%;"/><button style="  
+  text-transform: uppercase;
+  outline: 0;
+  background: #5610ff;
+  width: 15%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  box-shadow: 7px 9px 13px 0px rgba(0,0,0,0.91);
+  cursor: pointer;" type="button" onclick="user2()">shearch</button>
+  </form>
+  </div>
+  <div style="display: flex;margin-top: 15px;">
+	<div style="background: rgba(255, 255, 255, 0.49);height: 80px;width: 49%;margin:auto;text-align:center">
+	<p style="margin-top: 5px;font-size: 20px;font-weight: 600;margin-bottom: 10px;text-align:center">mode:</p>
+	<div style="display:flex">
+	<button id="modepost1" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+   background: rgba(255, 0, 0, 0.42);">post</button>
+	<button id="modehighlight1" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 0.42);">highlight</button>
+	<button id="modefollower1" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(0, 255, 0, 0.42);">follower</button>
+	<button id="modefollowing1" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 0.42);">following</button>
+	</div>
+	</div>
+	<div style="background: rgba(255, 255, 255, 0.49);height: 80px;width: 49%;margin:auto">
+	<p style="margin-top: 5px;font-size: 20px;font-weight: 600;margin-bottom: 10px;text-align:center">mode:</p>
+	<div style="display:flex">
+	<button id="modepost2" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 0.42);">post</button>
+	<button id="modehighlight2" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 0.42);">highlight</button>
+	<button id="modefollower2" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+     background: rgba(0, 255, 0, 0.42);">follower</button>
+	<button id="modefollowing2" style="font-size: 25px;
+    transform: translate(0px, 0px);
+    border: 0px;
+    margin: auto;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 0.42);">following</button>
+	</div>
+	</div>
+  </div>
+<div class="post">
+<div style="
+    margin-bottom: 30px;
+    text-align: center;
+    height: 30%;
+">
+   <br><br><img src="img/0.jpg" id="pfp" onclick="gotoprofile()" alt="ima de prifile mai bon la" style="
+  width: 22%;
+  border: solid;
+  box-shadow: 3px 5px 16px 2px rgba(0,0,0,0.91);
+  "><img src="img/0.jpg" id="pfp3" onclick="gotoprofile2()" alt="ima de prifile mai bon la" style="
+  width: 22%;
+  border: solid;
+  margin-left: 28%;
+  box-shadow: 3px 5px 16px 2px rgba(0,0,0,0.91);
+  ">
+</div>
+
+<div class="follower" id="follower" style="
+    width: 49%;
+    position: absolute;
+">
+<h1 id="name1" name="name1" style="
+    color: white;
+	text-align: center;
+">name1</h1>
+<div name="lefollower" id="odometer2" style="line-height: 1em;
+    display: unset;" class="odometer">0</div>
+</div>
+<div class="followein" id="followin" style="
+    width: 48%;
+    position: inherit;
+    margin-left: 52%;
+">
+<h1  id="name2lol" style="
+    color: white;
+	text-align: center;
+">name2</h1>
+<div name="lefollowin" id="odometer3" style="line-height: 1em;
+    display: unset;" class="odometer">0</div>
+</div>
+<div class="followers" id="post-text">
+<h1 name="vatefaire" id="lecomba" style="
+    color: white;
+	text-align: center;
+	 font-size: 25px;
+">before name1 beat name2</h1>
+<div name="view" id="odometer1" style="font-size: 80px;line-height: 1em;
+    display: unset;" class="odometer">0</div>
+</div>
+
+</div>
+<div style="text-align:center;margin-top:20px">
+<button onclick="sonsetting()" id="soundstting" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 30%;
+  border: 0;
+  margin-left: 3%;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 30px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  box-shadow: rgba(0, 0, 0, 0.91) 9px 10px 20px 0px;
+  cursor: pointer;" type="button" >sound : OFF</button>
+</div>
+<div style="
+display: flow-root;" id="backcredit">
+<h1 id="autre2" style="
+    color: white;
+    text-align: center;
+    font-size: 30px;
+
+">this livecount is owned by mathias777</h1>
+</div>
+<script>
+$('button').mousedown(function(){
+$(this).css({"-webkit-transform":"translate(4px, 4px)"})
+})
+$('button').mouseup(function(){
+$(this).css({"-webkit-transform":"translate(0px, 0px)"})
+})
+$("#buttonmethod1").click(function(){
+	methoddemerde = 1
+	$("#buttonmethod2").css('background', "rgba(255, 0, 0, 0.42)")
+	$("#buttonmethod1").css('background', "rgba(0, 255, 0, 0.42)")
+})
+$("#buttonmethod2").click(function(){
+	methoddemerde = 0
+	$("#buttonmethod1").css('background', "rgba(255, 0, 0, 0.42)")
+	$("#buttonmethod2").css('background', "rgba(0, 255, 0, 0.42)")
+})
+$("#modepost1").click(function(){
+mode1 = 1
+$("#modepost1").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modefollower1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight1").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modehighlight1").click(function(){
+mode1 = 2
+$("#modehighlight1").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollower1").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modefollower1").click(function(){
+mode1 = 3
+$("#modefollower1").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight1").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modefollowing1").click(function(){
+mode1 = 4
+$("#modefollowing1").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollower1").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight1").css('background', "rgba(255, 0, 0, 0.42)")
+})
+
+$("#modepost2").click(function(){
+mode2 = 1
+$("#modepost2").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modefollower2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight2").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modehighlight2").click(function(){
+mode2 = 2
+$("#modehighlight2").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollower2").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modefollower2").click(function(){
+mode2 = 3
+$("#modefollower2").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollowing2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight2").css('background', "rgba(255, 0, 0, 0.42)")
+})
+$("#modefollowing2").click(function(){
+mode2 = 4
+$("#modefollowing2").css('background', "rgba(0, 255, 0, 0.42)")
+$("#modepost2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modefollower2").css('background', "rgba(255, 0, 0, 0.42)")
+$("#modehighlight2").css('background', "rgba(255, 0, 0, 0.42)")
+})
+function back(){
+window.location = '/'
+}
+function gotomedia(){
+window.location = 'livemedia.html'
+}
+function gotohashtag(){
+window.location = 'hashtags.html'
+}
+</script>
+<style>
+button{
+transition: all 0.2s
+}
+</style>

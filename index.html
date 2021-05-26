@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"/>
+<body id="wewcor" onload="checkcookie()">
+<title>ΜΔŦĦƗΔŞ777 - ŁƗV€ØĆỮŇŦ</title>
+<link rel="icon" href="img/conar.ico">
+<link rel="font" href="fon/mathias.ttf">
+<link rel="stylesheet" type="text/css" href="css/livecount.css" />
+<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="js/livecount.js"></script>
+<script src="js/odometer.js"></script>
+<script src="js/sweetalert.js"></script>
+<div style='text-align: center;'>
+<button onclick="back()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 15%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" title="degar" type="button">back</button>
+<button onclick="gotomedia()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 35%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" type="button">media livecount</button>
+<button onclick="gotohashtag()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 30%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" type="button">hashtags post</button>
+<button onclick="gotobattle()" id="othercount" style="font-family: mathias;text-transform: uppercase;outline: 0px;background: rgba(196, 194, 196, 0.6);width: 15%;border: 4px solid rgba(255, 255, 255, 0.47);padding: 5px;color: rgb(255, 255, 255);font-size: 30px;cursor: pointer;transform: translate(0px, 0px);" type="button">battle</button>
+</div>
+<h1 id="non" style="
+    color: white;
+	text-align: center;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">deviantart livecount by mathias777</h1>
+<div style="text-align: center;font-family:mathias;font-weight:600;    background: rgba(255, 255, 255, 0.52);width: 60%;margin: auto;height: 110px;">
+<p style="font-size: 40px;margin-bottom: 0px;
+    margin-top: 0px;">refresh rate :</p>
+<div style="display: inline-flex;width: 60%;">
+<button class="alermotod" title="increase the refresh rate of the livecount" id="increaserate" style="transform: translate(0px, 0px);
+    border: 0px;
+	width: 40%;
+    font-size: 42px;
+	margin: auto;
+    height: 50px;
+    font-family: mathias;
+    background: rgba(0, 255, 7, 0.42);
+    font-weight: 600;">+</button><p id="textcount" style="font-size: 40px;margin: 5px;">5</p>
+	<button class="alermotod" title="decrease the refresh rate of the livecount" id="decreaserate" style="transform: translate(0px, 0px);
+    border: 0px;
+	width: 40%;
+    font-size: 42px;
+	margin: auto;
+    height: 50px;
+    font-family: mathias;
+    background: rgba(255, 0, 7, 0.42);
+    font-weight: 600;">-</button>
+</div> 
+</div>
+
+<br>
+<form name="lel" onsubmit="tpjland()">
+      <input type="text" style="box-shadow: 20px 6px 11px 0px rgba(0,0,0,0.91);" id="usernamer" name="leuseu"required placeholder="username"/><button id="bouto4" style="  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #5610ff;
+  width: 12%;
+  font-family: mathias;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer; box-shadow: 16px 6px 13px 0px rgba(0,0,0,0.91);" type="button" onclick="tpjland()">shearch</button>
+	  </form>
+	<script>
+function gotobattle(){
+window.location = 'battle.html'
+}
+function gotomedia(){
+window.location = 'livemedia.html'
+}
+function gotohashtag(){
+window.location = 'hashtags.html'
+}
+	function fullscreen(){
+	window.location.href = "fullscreen.html"
+	}
+	
+	function tpjland(){
+	event.preventDefault()
+	useuname = document.getElementById('usernamer').value;
+	swal.fire({
+			title: "new deviantart username set:",
+			text: useuname,
+			toast: true,
+			icon: "success",
+			animation: null,
+			position: 'top',
+			allowEscapeKey: false,
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true})
+	document.cookie = "lastuser=" + useuname + ";expires=Thu, 25 Feb 4444 07:24:41 GMT";
+		CULER.open('GET', "https://www.deviantart.com/_napi/da-user-profile/api/init/posts?username=" + useuname);
+		CULER.send(null);
+}
+	</script>
+<div class="post">
+   <br><br><img src="img/0.jpg" id="pfp" onclick="gotoprofile()" alt="ima de prifile mai bon la" style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border: solid 3px black;
+  box-shadow: 13px 15px 38px -9px rgba(0,0,0,0.91);">
+<h1 id="coconu" onclick="gotoprofile()" style="
+    color: white;
+	text-align: center;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+	font-family: mathias;
+">...</h1>
+<div class="autre" id="autre" style="
+    width: 100%;
+    position: inherit;
+	font-family: mathias;
+">
+<h1 id="fermela" class="deviantiontext" style="
+    color: white;
+	text-align: center;
+	line-height: 0;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">deviations :</h1>
+<div name="leposte" style="font-size: 150px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85);" id="odometer" class="odometer">0</div>
+<h1 id="milestona" style="
+    color: white;
+	text-align: center;
+	line-height: 0;
+	font-size: 5px
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">left for </h1>
+<div name="milespzn" id="odometer5" style="font-size: 70px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85)" class="odometer">0</div>
+</div>
+</div>
+<div class="follower" id="follower" style="
+    width: 49%;
+    position: absolute;
+	font-family: mathias;
+">
+<h1 id="folower" style="
+    color: white;
+	text-align: center;
+	line-height: 0;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">watchers :</h1>
+<div name="lefollower" onclick="fullscreen()" id="odometer2" style="font-size: 100px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85)" class="odometer">0</div>
+</div>
+<div class="followein" id="followin" style="
+    width: 48%;
+    position: inherit;
+    margin-left: 52%;
+	font-family: mathias;
+">
+<h1 id="folower" style="
+    color: white;
+	text-align: center;
+	font-family: mathias;
+	line-height: 0;
+">watching :</h1>
+<div name="lefollowin" id="odometer3" style="font-size: 100px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85)" class="odometer">0</div>
+</div>
+<div class="followers" id="post-text">
+<h1 id="autre2" style="
+    color: white;
+	text-align: center;
+	line-height: 0;
+	font-family: mathias;
+	text-shadow: 3px 4px 18px rgba(0,0,0,0.85);
+">pageviews :</h1>
+<div name="highlight" id="odometer4" style="font-size: 100px; line-height: 1em; display: unset;font-family: mathias;text-shadow: 3px 4px 0px rgba(0,0,0,0.85)" class="odometer">0</div>
+</div>
+<div style="
+display: flow-root;" id="backcredit">
+<div style="
+    width: 99%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 4px;
+">
+<button onclick="sonsetting()" id="soundstting" style="
+  text-transform: uppercase;
+  outline: 0;
+  background: #FF0000;
+  width: 30%;
+  border: 0;
+  padding: 10px;
+  font-family: mathias;
+  color: #FFFFFF;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.91) 9px 10px 20px 0px;
+  cursor: pointer;
+  " type="button">sound : OFF</button>
+<img src="img/sole.png" id="sole" onclick="nightmode()" alt="ong ! plsu de silzv?!" style="
+  width: 60px;
+  margin-left: 63%;
+  transform: translate(10px, -5px);
+  ">
+</div>
+<div style="
+    text-align: center;
+    margin-top: 45px;
+">
+  <button title="disable or enable the ability to switch to a fullscreen version of the selected count" id="soundstting" style="
+ font-family: mathias;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(193, 1, 134);
+  width: 35%;
+  border: 0;
+  transform: translateY(0);
+  padding: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  " type="button">count click : disabled</button>
+  </div>
+</div>
+<script>
+var rateres = 5
+$('button').mousedown(function(){
+$(this).css({"-webkit-transform":"translate(4px, 4px)"})
+})
+$('button').mouseup(function(){
+$(this).css({"-webkit-transform":"translate(0px, 0px)"})
+})
+$("#buttonmethod1").click(function(){
+	methoddemerde = 1
+	$("#buttonmethod2").css('background', "rgba(255, 0, 0, 0.42)")
+	$("#buttonmethod1").css('background', "rgba(0, 255, 0, 0.42)")
+})
+$("#buttonmethod2").click(function(){
+	methoddemerde = 0
+	$("#buttonmethod1").css('background', "rgba(255, 0, 0, 0.42)")
+	$("#buttonmethod2").css('background', "rgba(0, 255, 0, 0.42)")
+})
+$("#decreaserate").click(function(){
+if (updatecount == 1000){
+	swal.fire({
+			title: "you cant set less than 1 second.",
+			toast: true,
+			icon: "eroor",
+			animation: null,
+			position: 'top',
+			allowEscapeKey: false,
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true})
+}else{
+	rateres--
+	updatecount -= 1000
+	$("#textcount").text(rateres)
+	swal.fire({
+			title: "new refresh rate:",
+			text: rateres,
+			toast: true,
+			icon: "success",
+			animation: null,
+			position: 'top',
+			allowEscapeKey: false,
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true})
+			}
+})
+
+$("#increaserate").click(function(){
+	rateres++
+	updatecount += 1000
+	$("#textcount").text(rateres)
+	swal.fire({
+			title: "new refresh rate:",
+			text: rateres,
+			toast: true,
+			icon: "success",
+			animation: null,
+			position: 'top',
+			allowEscapeKey: false,
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true})
+})
+function countclick(){
+
+}
+</script>
+<style>
+button{
+transition: all 0.2s
+}
+</style>
+</body>
